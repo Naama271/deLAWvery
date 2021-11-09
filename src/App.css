@@ -1,0 +1,102 @@
+* {
+  direction: rtl;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #0a5cff;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  align-content: center;
+  justify-content: space-between;
+  /* background-image: url(./DeLawVeryLogo.svg); */
+}
+
+.header div{
+  width: 33%;
+  text-align: left;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding-left: 10px;
+}
+
+img {
+  width: 200px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  align-items: flex-start;
+  float: left;
+}
+
+input {
+  direction: rtl;
+  margin-bottom: 5px;
+}
+
+.list {
+  width: 30vw;
+  float: right;
+  border-left: 1px solid rgb(168, 168, 168);
+  height: 100vh;
+  padding: 20px 15px;
+}
+
+.item {
+  border: 1px solid rgb(197, 197, 197);
+  border-radius: 15px;
+  margin-top: 5px;
+  padding: 7px;
+}
+
+.item button {
+  float: left;
+  min-width: 0px;
+  padding: 3px 3px;
+}
+
+label {
+  margin-top: 15px;
+}
+
+.namesInput {
+  display: flex;
+  flex-direction: row;
+}
+
+.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  .list {
+    width: 100vw;
+    float: none;
+    border-left: 0px;
+  }
+  .form {
+    width: 100vw;
+    float: none;
+    align-items: center;
+  }
+
+  .header{
+    flex-direction: column;
+  }
+
+  .header div{
+    width: 100%;
+    text-align: left;
+  }
+}
